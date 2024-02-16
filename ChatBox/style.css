@@ -1,0 +1,16 @@
+.box{
+    padding-left: 5px;
+    border: 1px solid;
+    max-width: 15%;
+    height: 150px;
+    overflow: auto;
+}
+button{
+    background-color: green;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

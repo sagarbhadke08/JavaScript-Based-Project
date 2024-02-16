@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <h4 id="text"></h4>
+    </div>
+
+    <input id="newText" type="text">
+    <button onclick="addText()">Send</button>
+    <script>
+        function addText() {
+            if (newText.value !== null) {
+                text.innerHTML += text.innerHTML ? "<br>" + newText.value : newText.value;
+                newText.value = ""
+            }
+        }
+    </script>
+</body>
+
+</html>
