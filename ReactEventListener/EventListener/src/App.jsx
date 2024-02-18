@@ -1,18 +1,35 @@
 import './App.css';
 
+
+const messages = [
+  'Learn React', 'Apply for New Job', 'Earn New Income'
+]
 export default function App() {
+  const step = 2;
+
+  function next() {
+    alert('next');
+  }
+
+  function previous() {
+    alert('previous');
+  }
+
+  function changeBackGround(){
+    style=" backgroundColor: '#7950f2', color: '#fff'";
+  }
   return (
     <div className="steps">
       <div className="numbers">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+        <div onMouseEnter={()=>alert('1')} className={`${step >= 1 ? 'active' : ''}`}>1</div>
+        <div className={`${step >= 2 ? 'active' : ''}`}>2</div>
+        <div className={`${step >= 3 ? 'active' : ''}`}>3</div>
       </div>
-      <p className="message">Hello World</p>
+      <p className="message">Step {step}:{messages[step - 1]}</p>
 
       <div className="buttons">
-        <button>Next</button>
-        <button>Previous</button>
+        <button onClick={() => next()}  style={{ backgroundColor: '#7950f2', color: '#fff' }}>Next</button>
+        <button onClick={() => previous()} style={{ backgroundColor: '#7950f2', color: '#fff' }}>Previous</button>
       </div>
     </div>
   );
