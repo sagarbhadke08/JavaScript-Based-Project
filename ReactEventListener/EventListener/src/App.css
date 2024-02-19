@@ -46,10 +46,17 @@ body {
   padding: 10px 15px;
   font-size: 15px;
   font-weight: bold;
-border-radius: 80%;
+border-radius: 20px;
 }
 
 .numbers .active{
   background-color: #7950f2;
   color: #fff;
+}
+
+.close{
+  text-align: end;
+  font-size: 2rem;
+  margin: 2rem;
+  font-weight: bold;
 }
