@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-
+import './components/Header.jsx'
 
 const messages = [
   'Learn React', 'Apply for New Job', 'Earn New Income'
