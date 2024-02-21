@@ -24,7 +24,7 @@ export default function App() {
   }
   return (
     <div>
-
+      <Header></Header>
       <div className="close" onClick={() => setIsOpen(!isOpen)}>X</div>
 
       {
