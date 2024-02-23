@@ -1,6 +1,6 @@
-export default function Header(){
+export default function Header() {
 
     return <>
-        This is Header
+        <h1>This is Header</h1>
     </>
 }
